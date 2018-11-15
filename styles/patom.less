@@ -1,0 +1,36 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+table.patom {
+  height: 200px;
+  display: block;
+  overflow-y: scroll;
+
+  tr {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid @text-color-subtle;
+
+    th {
+      padding-bottom: 10px;
+    }
+
+    th, td {
+      padding-left: 5px;
+      padding-right: 5px;
+      border-left: 1px solid @pane-item-border-color
+    }
+
+    th:first-child, td:first-child {
+      border-left: none;
+    }
+
+    td.null {
+      font-style: italic;
+      color: @text-color-ignored;
+    }
+  }
+}

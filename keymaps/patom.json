@@ -1,0 +1,6 @@
+{
+  "atom-workspace": {
+    "cmd-1": "patom:fetch",
+    "cmd-2": "patom:connect"
+  }
+}

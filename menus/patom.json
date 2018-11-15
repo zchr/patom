@@ -1,0 +1,30 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Fetch code",
+        "command": "patom:fetch"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Patom",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "patom:fetch"
+            },
+            {
+              "label": "Manage Connection",
+              "command": "patom:connect"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
