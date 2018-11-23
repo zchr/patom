@@ -1,11 +1,14 @@
 {
   "name": "patom",
   "main": "./lib/patom",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": ["patom:fetch","patom:connect"]
+    "atom-workspace": [
+      "patom:fetch",
+      "patom:connect"
+    ]
   },
   "repository": "https://github.com/atom/patom",
   "license": "MIT",
@@ -14,5 +17,12 @@
   },
   "dependencies": {
     "pg": "^7.6.0"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
   }
 }
