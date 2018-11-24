@@ -4,10 +4,41 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-table.patom {
-  height: 200px;
-  display: block;
+div.patom {
+  display: grid;
+  max-height: 100%;
   overflow-y: scroll;
+
+  span {
+    padding: 8px 4px;
+  }
+
+  span.header {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    border-bottom: 1px solid #E3E4E4;
+  }
+
+  span.null {
+    font-style: italic;
+    color: @text-color-ignored;
+  }
+}
+
+table.patom {
+  thead {
+    tr {
+      display: block;
+    }
+  }
+
+  tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+  }
 
   tr {
     padding-top: 5px;
@@ -28,7 +59,7 @@ table.patom {
       border-left: none;
     }
 
-    td.null {
+    div.null {
       font-style: italic;
       color: @text-color-ignored;
     }
