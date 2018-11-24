@@ -21,6 +21,10 @@
             {
               "label": "Manage Connection",
               "command": "patom:connect"
+            },
+            {
+              "label": "Refresh Autocomplete Info",
+              "command": "patom:fetch-columns"
             }
           ]
         }
