@@ -5,6 +5,23 @@
 @import "ui-variables";
 
 div.patom {
+  margin: 0 15px;
+}
+
+div.patom.flex {
+  display: flex;
+
+  div {
+    margin-bottom: 15px;
+    padding: 5px 15px;
+
+    background-color: @button-background-color;
+    border: 1px solid @button-border-color;
+    border-radius: 3px;
+  }
+}
+
+div.patom.grid {
   display: grid;
   max-height: 100%;
   overflow-y: scroll;
@@ -17,51 +34,17 @@ div.patom {
     position: sticky;
     top: 0;
     padding: 5px;
-    border-bottom: 1px solid #E3E4E4;
+    font-weight: bold;
+    background-color: @base-background-color;
   }
 
   span.null {
     font-style: italic;
     color: @text-color-ignored;
   }
-}
 
-table.patom {
-  thead {
-    tr {
-      display: block;
-    }
-  }
-
-  tbody {
-    display: block;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-  }
-
-  tr {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid @text-color-subtle;
-
-    th {
-      padding-bottom: 10px;
-    }
-
-    th, td {
-      padding-left: 5px;
-      padding-right: 5px;
-      border-left: 1px solid @pane-item-border-color
-    }
-
-    th:first-child, td:first-child {
-      border-left: none;
-    }
-
-    div.null {
-      font-style: italic;
-      color: @text-color-ignored;
-    }
+  p.error {
+    color: @text-color-error;
+    font-style: italic;
   }
 }
