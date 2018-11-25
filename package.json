@@ -1,8 +1,8 @@
 {
-  "name": "patom",
+  "name": "Patom",
   "main": "./lib/patom",
   "version": "1.0.0",
-  "description": "A short description of your package",
+  "description": "Interact with Postgres from within Atom",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
@@ -15,7 +15,7 @@
       "patom:shortcuts"
     ]
   },
-  "repository": "https://github.com/atom/patom",
+  "repository": "https://github.com/zchr/patom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
