@@ -7,7 +7,12 @@
   "activationCommands": {
     "atom-workspace": [
       "patom:fetch",
-      "patom:connect"
+      "patom:fetch-3",
+      "patom:fetch-4",
+      "patom:fetch-5",
+      "patom:connect",
+      "patom:fetch-columns",
+      "patom:shortcuts"
     ]
   },
   "repository": "https://github.com/atom/patom",

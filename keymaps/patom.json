@@ -1,5 +1,8 @@
 {
   "atom-workspace": {
-    "cmd-1": "patom:fetch"
+    "cmd-1": "patom:fetch",
+    "cmd-3": "patom:fetch-3",
+    "cmd-4": "patom:fetch-4",
+    "cmd-5": "patom:fetch-5"
   }
 }
