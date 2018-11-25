@@ -15,12 +15,33 @@
           "label": "Patom",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "patom:fetch"
+              "label": "Execute",
+              "submenu": [
+                {
+                  "label": "Highlighted Text",
+                  "command": "patom:fetch"
+                },
+                {
+                  "label": "Shortcut-3",
+                  "command": "patom:fetch-3"
+                },
+                {
+                  "label": "Shortcut-4",
+                  "command": "patom:fetch-4"
+                },
+                {
+                  "label": "Shortcut-5",
+                  "command": "patom:fetch-5"
+                }
+              ]
             },
             {
               "label": "Manage Connection",
               "command": "patom:connect"
+            },
+            {
+              "label": "Shortcuts",
+              "command": "patom:shortcuts"
             },
             {
               "label": "Refresh Autocomplete Info",
