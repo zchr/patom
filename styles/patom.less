@@ -26,8 +26,24 @@ div.patom.grid {
   max-height: 100%;
   overflow-y: scroll;
 
-  span {
+  span.row {
     padding: 8px 4px;
+    overflow-y: hidden;
+
+    span.draggable {
+      padding: 0 1px;
+      background-color: darken(@base-background-color, 10%);
+
+      &:hover {
+        cursor: ew-resize;
+        background-color: @button-background-color-selected;
+        width: 4px;
+      }
+    }
+
+    &:last-child {
+      height: calc(auto - 30px);
+    }
   }
 
   span.header {
@@ -36,6 +52,16 @@ div.patom.grid {
     padding: 5px;
     font-weight: bold;
     background-color: @base-background-color;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span.light {
+    background-color: lighten(@app-background-color, 2%);
+  }
+
+  span.hover {
+    background-color: @background-color-selected;
   }
 
   span.null {
