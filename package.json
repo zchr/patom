@@ -1,7 +1,7 @@
 {
   "name": "Patom",
   "main": "./lib/patom",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Interact with Postgres from within Atom",
   "keywords": [],
   "activationCommands": {
